@@ -1,0 +1,18 @@
+
+// i/o example
+
+#include <iostream>
+using namespace std;
+
+int main ()
+{
+  float pic=8;
+  float avi  = 3/pic;
+  float vaki = (1-avi);
+  
+   cout << "Pizza ache: " <<avi<<endl ;
+   cout << "table a dilo: "<< vaki<<endl;
+   cout<< "the get : "<< vaki-avi;
+   
+  return 0;
+}
