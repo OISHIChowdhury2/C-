@@ -1,0 +1,39 @@
+#include <iostream>
+using namespace std;
+class Member {
+    public : 
+     int height;
+     int wight;
+    void show(){
+        cout<< height <<endl;
+        cout<< wight<<endl;
+    }
+    void rectangleArea (){
+        cout<< height*wight;
+    }
+   void setData(int h, int w)
+    {
+        height = h;
+        wight = w;
+    }
+    
+    void getData(int height, int wight){
+        this->height= height;
+        this->wight = wight;
+    }
+};
+int main() {
+    // Write C++ code here
+    Member objOfMember;
+    objOfMember.setData(5,2);
+    objOfMember.getData(7,4);
+    objOfMember.show();
+    objOfMember.rectangleArea();
+    
+    Member obg;
+    obg.height = 9;
+    obg.wight = 2;
+    obg.rectangleArea();
+    
+    
+}
