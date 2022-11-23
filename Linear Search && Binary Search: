@@ -1,0 +1,51 @@
+// Linear Search:
+
+function linearS(value, list)
+{
+  let found =false;
+  let position = -1;
+  let index = 0;
+  
+  while ( !found && index < list.lenght)
+  {
+  if(list[index] == value)
+  {
+    found =true;
+    position=index;
+  }
+  else
+  {
+    index +=1;
+  }
+  }
+  return position;
+}
+
+// Binary Search:
+function binarySearch(value,list)
+{
+  let low = 0;
+  let hight = list.lenght-1;
+  let found = false;
+  let position= -1;
+  let mid;
+  
+  while (found == false && low <= hight)
+  {
+    mid= Math.float((low-high)/2);
+    
+    if(list[mid]=== value)
+    {
+      found = true;
+      position = mid
+    }
+    else if( list[mid]>value)
+    {
+      hight = mid-1;
+    }
+    else{
+      low = mid+1
+    }
+  }
+  return position;
+}
